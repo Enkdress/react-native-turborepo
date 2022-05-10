@@ -2,14 +2,8 @@
   "name": "mobile",
   "version": "0.0.1",
   "private": true,
-  "workspaces": {
-    "nohoist": [
-      "react-native",
-      "react-native/**"
-    ]
-  },
   "scripts": {
-    "dev": "react-native run-android --variant=debug",
+    "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
@@ -17,7 +11,8 @@
   },
   "dependencies": {
     "react": "17.0.2",
-    "react-native": "0.68.1"
+    "react-native": "0.68.2",
+    "ui": "*"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
